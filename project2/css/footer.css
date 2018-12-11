@@ -1,0 +1,19 @@
+footer a{
+    font-size: 0.75rem;
+    color: black;
+}
+footer a:hover{
+    text-decoration: none;
+    color: black;
+}
+footer p{
+    font-size: 0.75rem;
+    color: #b5b5b5;
+    /*margin-left: 1.5rem   ;*/
+    line-height: 0.75rem;
+   margin: 0;
+    padding-bottom: 1rem;
+}
+footer{
+    background: #b5b5b5
+}

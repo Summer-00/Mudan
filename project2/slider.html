@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    .slider{
+        width: 1300px;;
+        /*height: auto;*/
+    }
+</style>
+<body>
+<div class="slider">
+    <div class="my_slider">
+        <div class="box">
+            <ul>
+                <li><a href=""><img src="img/slider/banner1.png" alt=""/></a></li>
+                <li><a href=""><img src="img/slider/banner2.png" alt=""/></a></li>
+                <li><a href=""><img src="img/slider/banner3.png" alt=""/></a></li>
+                <li><a href=""><img src="img/slider/banner4.png" alt=""/></a></li>
+                <li><a href=""><img src="img/slider/banner1.png" alt=""/></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/JqMyslider.js"></script>
+<script>
+    $(".my_slider").my_slider(1500,4000)
+
+</script>
+</html>

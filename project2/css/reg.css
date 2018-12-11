@@ -1,0 +1,36 @@
+.reg_content form{
+    background:rgb(23,162,184) ;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+.reg_content form input{
+    opacity: 1;
+}
+.reg_content form div{
+
+    height: 3rem;
+    width: 100%;
+}
+.reg_header h1{
+    text-align: center;
+}
+.reg_content div>span{
+    display: none;
+
+}
+.reg_content .reg_err{
+
+    display: block;
+    color: red;
+}
+.reg_header {
+    width: 100%;
+    background-image: url("../img/login/log_bg.jpg");
+    height:10rem;
+    
+    opacity: 0.9;
+}
+.reg_header h1{
+    line-height: 10rem;
+    color: white;
+}

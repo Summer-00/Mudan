@@ -1,0 +1,51 @@
+.title {
+    width: 100%;
+    background-image: url("../img/login/log_bg.jpg");
+    height:10rem;
+    opacity: 0.9;
+}
+.title h1{
+
+    text-align: center;
+    color: white;
+    line-height: 10rem;
+    opacity: 1;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.login-content{
+
+    margin-top: 5rem ;
+}
+.login-content span{ 
+    display: none;
+}
+.login-content form .login_err{
+
+    color:#ff0000;
+    display:block;
+}
+
+
+/* .login-content .row .col-md-6:first-child div{ */
+
+
+/* } */
+/* .login-content .row .col-md-6:first-child img{ */
+
+/* } */
+
+
+.login-content .row .col-md-6 p {
+
+    text-align: center;
+}
+.login-content form div{
+
+    height: 2rem !important;
+}
+.login-content form{
+
+    background: #ebebeb;
+    border-radius: 7px;
+}
