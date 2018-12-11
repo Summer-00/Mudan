@@ -15,7 +15,7 @@ router.post('/vail',function(req,res){
         if(result.length==0)
         {res.send({"Fail":1})}
         else{
-  pool.query("select password from user where uid=?",req.body.uid,function(err,result){
+  pool.query("select password,username from user where uid=?",req.body.uid,function(err,result){
             
             
 
@@ -23,7 +23,9 @@ router.post('/vail',function(req,res){
 
             if(result[0].password==req.body.password){
                 console.log(req.body.password);
-                console.log(result[0].password);
+                console.log(result[0].username);
+                req.session.username=result[0].username;
+                console.log(req.session);
                 res.send({"OK":0})
             }
             else{
@@ -84,8 +86,20 @@ router.post('/reg',function(req,res){
 
 //form提交 登陆
 router.post('/login',function(req,res){
-    res.user.
-    res.send("登录成功！")
+
+    res.send({ok:1})
+});
+
+
+//session验证
+router.get('/session',(req,res)=>{
+    console.log(req.session);
+    if(req.session.username){
+
+        res.send({username:req.session.username})
+
+    }
+    else res.send({code:0,msg:false})
 });
 
 //随机获取四个 推荐内容

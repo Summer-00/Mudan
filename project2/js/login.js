@@ -35,16 +35,18 @@ $(function () {
 
                $.ajax({
                 url:"http://127.0.0.1:4000/user/vail",
+                xhrFields:{withCredentials: true},
+                crossDomain: true,
                 type:"post",
                 data:{"uid":uid.val(),"password":password.val()},
                 dataType:"json",
                 success:function(res){
                     console.log(res);
                     if(res.OK==0){
-                        $("form").submit(
-                            window.location.href="./index.html"
+
+                            window.location.href="./index.html";
                             //window.location.replace("http://localhost:4000/index.html")
-                        );
+
 
                     }
                     else{
