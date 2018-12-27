@@ -34,7 +34,7 @@ $(function () {
         if(span.eq(1).html()==""&&span.eq(2).html()==""){
 
                $.ajax({
-                url:"http://127.0.0.1:4000/user/vail",
+                url:"http://47.99.68.83:3000/user/vail",
                 xhrFields:{withCredentials: true},
                 crossDomain: true,
                 type:"post",

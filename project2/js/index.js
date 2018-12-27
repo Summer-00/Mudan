@@ -8,7 +8,7 @@ $(function(){
     //验证登录
 
     $.ajax({
-        url:"http://127.0.0.1:4000/user/session",
+        url:"http://47.99.68.83:3000/user/session",
         xhrFields:{withCredentials: true},
         crossDomain: true,
         type:"get",
@@ -113,7 +113,7 @@ $(function(){
      var data="";
     //获取bilibili动画更新时间表 api 加载
     $.ajax({
-        url:"http://127.0.0.1:4000/getapi/bilibiliapi",
+        url:"http://47.99.68.83:3000/getapi/bilibiliapi",
         type:"get",
         dataType:"json",
         success(res){
@@ -176,7 +176,7 @@ $(function(){
     //ajax获取内容，
     //推荐
     $.ajax({
-        url:"http://127.0.0.1:4000/user/recommend",
+        url:"http://47.99.68.83:3000/user/recommend",
         type:"get",
         dataType:"json",
         success(res){
@@ -195,7 +195,7 @@ $(function(){
 
     //排行
     $.ajax({
-        url:"http://127.0.0.1:4000/user/rank",
+        url:"http://47.99.68.83:3000/user/rank",
         type:"get",
         dataType:"json",
         success(res){
@@ -285,7 +285,7 @@ $(function(){
     });
     //娱乐
     $.ajax({
-        url:"http://127.0.0.1:4000/user/entertainment",
+        url:"http://47.99.68.83:3000/user/entertainment",
         type:"get",
         dataType:"json",
         success(res){
@@ -304,7 +304,7 @@ $(function(){
     //以下一样
     //电影
     $.ajax({
-        url:"http://127.0.0.1:4000/user/movie",
+        url:"http://47.99.68.83:3000/user/movie",
         type:"get",
         dataType:"json",
         success(res){
@@ -322,7 +322,7 @@ $(function(){
         }});
     //游戏
     $.ajax({
-        url:"http://127.0.0.1:4000/user/movie",
+        url:"http://47.99.68.83:3000/user/movie",
         type:"get",
         dataType:"json",
         success(res){
@@ -340,7 +340,7 @@ $(function(){
         }});
     //音乐
     $.ajax({
-        url:"http://127.0.0.1:4000/user/movie",
+        url:"http://47.99.68.83:3000/user/movie",
         type:"get",
         dataType:"json",
         success(res){
@@ -358,7 +358,7 @@ $(function(){
         }});
     //科学技术
     $.ajax({
-        url:"http://127.0.0.1:4000/user/movie",
+        url:"http://47.99.68.83:3000/user/movie",
         type:"get",
         dataType:"json",
         success(res){

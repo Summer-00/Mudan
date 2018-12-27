@@ -12,7 +12,7 @@ $(function(){
 
             $(res).replaceAll("header");
             $.ajax({
-                url:"http://127.0.0.1:4000/user/session",
+                url:"http://47.99.68.83:3000/user/session",
                 xhrFields:{withCredentials: true},
                 crossDomain: true,
                 type:"get",

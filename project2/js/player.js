@@ -3,7 +3,7 @@ $(function () {
     var video=$(".video-player video");
     //console.log(id);
    $.ajax({
-       url:"http://127.0.0.1:4000/user/player",
+       url:"http://47.99.68.83:3000/user/player",
        type:"get",
        data:"id="+id,
        dataType:"json",
@@ -41,7 +41,7 @@ $(function () {
     //function load_barrage(){
 
         $.ajax({
-            url:"http://127.0.0.1:4000/user/get_barrage",
+            url:"http://47.99.68.83:3000/user/get_barrage",
             type:"get",
             data:"av="+id,
             dataType:"json",
@@ -230,7 +230,7 @@ $(function () {
 
 
         $.ajax({
-            url:"http://127.0.0.1:4000/user/input_barrage",
+            url:"http://47.99.68.83:3000/user/input_barrage",
             type:"post",
             data:{"av":id,
                 "barrage":inp.val(),
@@ -295,7 +295,7 @@ $(function () {
             //console.log(pt);
         if(pt==1){
          $.ajax({
-             url:"http://127.0.0.1:4000/user/play_times",
+             url:"http://47.99.68.83:3000/user/play_times",
              type:"post",
              data:{av:id},
              dataType:"json",

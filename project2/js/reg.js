@@ -29,7 +29,7 @@ $(function () {
        
        if(vail($(this).val(),exp1,$(this).next().children(),"请输入正确手机号")) {
            $.ajax({
-               url:"http://127.0.0.1:4000/user/uid",
+               url:"http://47.99.68.83:3000/user/uid",
                type:"post",
                data:{"uid":$("form input[name='uid']").val()},
                dataType:"json",
@@ -51,7 +51,7 @@ $(function () {
         
         if(vail($(this).val(),exp2,$(this).next().children(),"用户名格式错误，6-16位数字字母")) {
             $.ajax({
-                url:"http://127.0.0.1:4000/user/username",
+                url:"http://47.99.68.83:3000/user/username",
                 type:"post",
                 data:{"username":$("form input[name='username']").val()},
                 dataType:"json",
